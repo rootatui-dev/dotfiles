@@ -1,0 +1,226 @@
+[audio]
+enable_overdrive = true
+
+[backdrop]
+blur_intensity = 0.67999998480081558
+tint_intensity = 0.0
+
+[bar.default]
+border = "primary"
+center = [ "workspaces" ]
+end = [
+    "media",
+    "tray",
+    "notifications",
+    "clipboard",
+    "network",
+    "bluetooth",
+    "volume",
+    "brightness",
+    "battery",
+    "session"
+]
+margin_ends = 250
+start = [ "wallpaper", "clock", "control-center" ]
+widget_spacing = 12
+
+[desktop_widgets]
+enabled = false
+schema_version = 1
+widget_order = [
+    "desktop-widget-0000000000000001",
+    "desktop-widget-0000000000000002",
+    "desktop-widget-0000000000000003",
+    "desktop-widget-0000000000000004",
+    "desktop-widget-0000000000000006"
+]
+
+    [desktop_widgets.grid]
+    cell_size = 32
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000001]
+    cx = 853.5
+    cy = 533.5
+    output = "eDP-1"
+    rotation = 0.0
+    scale = 1.0
+    type = "audio_visualizer"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000001.settings]
+        aspect_ratio = 2.5
+        bands = 32
+        show_when_idle = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000002]
+    cx = 853.5
+    cy = 533.5
+    output = "eDP-1"
+    rotation = 0.0
+    scale = 1.0
+    type = "audio_visualizer"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000002.settings]
+        aspect_ratio = 2.5
+        bands = 32
+        show_when_idle = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000003]
+    cx = 853.5
+    cy = 533.5
+    output = "eDP-1"
+    rotation = 0.0
+    scale = 1.0
+    type = "audio_visualizer"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000003.settings]
+        aspect_ratio = 2.5
+        bands = 32
+        show_when_idle = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000004]
+    cx = 853.5
+    cy = 533.5
+    output = "eDP-1"
+    rotation = 0.0
+    scale = 1.0
+    type = "audio_visualizer"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000004.settings]
+        aspect_ratio = 2.5
+        bands = 32
+        show_when_idle = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000006]
+    cx = 853.5
+    cy = 533.5
+    output = "eDP-1"
+    rotation = 0.0
+    scale = 1.0
+    type = "audio_visualizer"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000006.settings]
+        aspect_ratio = 2.5
+        bands = 32
+        show_when_idle = true
+
+[dock]
+auto_hide = true
+background_opacity = 0.99999997764825821
+icon_size = 42
+radius = 12
+shadow = false
+
+[idle]
+behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+pre_action_fade_seconds = 0
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 600
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = true
+    timeout = 900
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = true
+    timeout = 660
+
+[keybinds]
+cancel = [ "Escape" ]
+down = [ "Down" ]
+left = [ "Left" ]
+right = [ "Right" ]
+up = [ "Up" ]
+validate = [ "Return" ]
+
+[notification]
+background_opacity = 0.99999997764825821
+
+[shell]
+clipboard_confirm_clear_history = false
+font_family = "CaskaydiaMono Nerd Font"
+launch_apps_as_systemd_services = true
+middle_click_opens_widget_settings = false
+polkit_agent = true
+settings_show_advanced = true
+
+    [shell.panel]
+    control_center_placement = "centered"
+    session_placement = "centered"
+
+    [shell.screenshot]
+    freeze_screen = true
+
+    [[shell.session.actions]]
+    action = "lock"
+    enabled = true
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "logout"
+    enabled = true
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "suspend"
+    enabled = true
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "reboot"
+    enabled = true
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "shutdown"
+    enabled = true
+    variant = "default"
+
+    [shell.shadow]
+    alpha = 0.4999999888241291
+
+[system.monitor]
+cpu_poll_seconds = 3
+gpu_poll_seconds = 3
+memory_poll_seconds = 3
+network_poll_seconds = 3
+
+[theme]
+community_palette = "muted"
+custom_palette = "sequoia"
+mode = "dark"
+source = "wallpaper"
+wallpaper_scheme = "muted"
+
+    [theme.templates]
+    builtin_ids = [ "gtk3", "kitty", "niri", "qt" ]
+    community_ids = [ "obsidian", "discord", "steam", "telegram", "yazi" ]
+
+[wallpaper]
+directory = "/home/artemii/.config/wallpapers"
+transition = [ "disc", "fade", "honeycomb", "stripes", "wipe", "zoom" ]
+
+    [wallpaper.automation]
+    order = "random"
+
+    [wallpaper.default]
+    path = "/home/artemii/.config/wallpapers/wal2.jpg"
+
+    [wallpaper.last]
+    path = "/home/artemii/.config/wallpapers/wal2.jpg"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/artemii/.config/wallpapers/wal2.jpg"
+
+[weather]
+address = "Pyatigorsk"
+effects = false
+
+[widget.control-center]
+glyph = "settings"

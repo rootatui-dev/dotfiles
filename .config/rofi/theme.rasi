@@ -1,0 +1,76 @@
+* {
+  cr1: #363544;
+  cr2: #7c7c84;
+  cr3: #a1a5a4;
+  cr4: #00000000;
+
+  background-color: @cr1;
+
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+}
+
+window {
+  padding: 1.0em;
+  width: 30em;
+  border-radius: 1em;
+  border-color: @cr2;
+  border: 0;
+}
+
+inputbar {
+  children: [prompt, entry];
+  padding: 0.0em 0.0em 1.0em 1.0em;
+  spacing: 0.2em;
+}
+
+prompt {
+  text-color: @cr2;
+  vertical-align: 0.5;
+}
+
+entry {
+  text-color: @cr3;
+  hide-cursor-on-empty: true;
+  cursor-color: inherit;
+  cursor-width: 0.14em;
+}
+
+textbox {
+  text-color: @cr3;
+}
+
+listview {
+  background-color: @cr4;
+  columns: 1;
+  lines: 6;
+}
+
+element {
+  orientation: horizontal;
+  children: [ element-icon, element-text ];
+  padding: 0.8em;
+  text-color: @cr2;
+}
+
+element selected {
+  text-color: @cr1;
+  background-color: @cr3;
+  border-radius: 1.0em;
+}
+
+element-text {
+  expand: true;
+  background-color: @cr4;
+  text-color: inherit;
+  vertical-align: 0.5;
+  highlight: none;
+}
+
+element-icon {
+  padding: 0.1em;
+  size: 1.3em;
+  background-color: @cr4;
+}
