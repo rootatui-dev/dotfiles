@@ -3,11 +3,13 @@
 !*/
 !.config/
 !.config/noctalia/
+!.config/noctalia/palettes/
 !.confog/niri/
 !.config/rofi/
 !.config/kitty/
 !.config/kitty/themes/
-!.config/wallpapers/sequoia.png
+!.config/wallpapers/
+!.config/fastfetch/
 
 !.config/niri/config.kdl
 !.config/niri/noctalia.kdl
@@ -17,5 +19,7 @@
 !.config/kitty/current-theme.conf
 !.config/kitty/themes/noctalia.conf
 !.config/noctalia/noctalia-config.toml
+!.config/noctalia/palettes/theme.json
+!.config/fastfetch/config.jsonc
 
 !.gitignore
